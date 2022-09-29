@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+    <title>Baribie Phone</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+</head>
+<body>
+    <div class=title>
+        <h1>Barbie</h1>
+    </div>
+    <div class="bar">
+            
+    </div>
+<article class="container">  
+    <div class="rect"></div>
+    <img src="https://cdn.pixabay.com/photo/2016/03/16/15/18/beauty-1260975_1280.jpg" alt="" id="brb">
+   <div class="hinge"></div>
+   <div class="hinge2"></div>
+    <div class="hinge3"></div>
+    <div class="hing4"></div>    
+    <div class=display>
+
+    </div>
+    <div class="button1"></div>
+    <div class=screen>
+ 
+    </div>
+    <div class="bottom">
+    </div>  
+        
+    </article>
+    <script>
+        document.getElementsByClassName("button1")[0].addEventListener('click',sound1);
+        var audios = new Array('audio1.mp3', 'audio2.mp3','audio3.mp3');
+        var random=Math.floor(Math.random()*3)
+        var audio = new Audio(audios[random]);
+        function sound1(){
+            document.getElementById("brb").src = "brb.jpg";
+            audio.pause();
+            audio.currentTime = 1;
+            audio = new Audio(audios[Math.floor(Math.random()*2)]);
+            audio.play();
+            if(audio.ended){
+                document.getElementById("brb").src = "https://cdn.pixabay.com/photo/2016/03/16/15/18/beauty-1260975_1280.jpg";
+            }
+            else{
+                document.getElementById("brb").src = "brb.jpg";
+            }
+           
+            
+        }
+    </script>
+</body>
