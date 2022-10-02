@@ -1,6 +1,6 @@
 body{
     margin: 0%;
-    background-color: #A7FFE4;
+    background-color: #FF577F;
     font-family:'Merriweather',serif;
 
 
@@ -34,13 +34,13 @@ body{
 
 .rect{
     position:absolute;
-    top: 52%;
+    top: 54%;
     left: 50%;
     transform: translate(-50%, -50%);
 justify-content: center;
     width: 300px;
-    height: 400px;
-    background-color: aliceblue;
+    height: 360px;
+    background-color: #FFD6EC;
 
 }
 
@@ -69,7 +69,7 @@ justify-content: center;
 }
 img{
     position: absolute;
-    height: 188px;
+    height: 180px;
     width: 300px;
     top: 39%;
     left: 50%;
@@ -78,12 +78,12 @@ img{
 
 .button1{
         position: absolute;
-        top: 58%;
+        top: 65%;
         left: 50%;
         transform: translate(-50%, -50%);
         width: 50px;
         height: 50px;
-        background-color:#937DC2;
+        background-color:#FF74B1;
         border: none;
         color: black;
         padding: 10px 20px;
@@ -96,7 +96,7 @@ img{
       
 }
 .button1:hover {
-    background-color: #C689C6;
+    background-color: #e72d7ecc;
   }
 
 
