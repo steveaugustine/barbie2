@@ -38,7 +38,7 @@
             document.getElementById("brb").src = "brb.jpg";
             audio.pause();
             audio.currentTime = 1;
-            audio = new Audio(audios[Math.floor(Math.random()*3)]);
+            audio = new Audio(audios[Math.floor((Math.random()*3)+1)]);
             audio.play();
             if(audio.ended){
                 document.getElementById("brb").src = "https://cdn.pixabay.com/photo/2016/03/16/15/18/beauty-1260975_1280.jpg";
